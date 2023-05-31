@@ -1,37 +1,37 @@
 <?php
 
-    function test_input($data) {
-       $data = trim($data);
-       $data = stripslashes($data);
-       $data = htmlspecialchars($data);
-       return $data;
-    }
+    // function test_input($data) {
+    //    $data = trim($data);
+    //    $data = stripslashes($data);
+    //    $data = htmlspecialchars($data);
+    //    return $data;
+    // }
 
-     $unameErr = "";
+    //  $unameErr = "";
     
-    echo "<br>";
+    // echo "<br>";
 
-    if(empty($_POST['uname'])){
-        $unameErr = "Please Enter your name.";
-        $user_name = "";
-    } else {
-        $user_name = test_input($_POST['uname']);
-    }
+    // if(empty($_POST['uname'])){
+    //     $unameErr = "Please Enter your name.";
+    //     $user_name = "";
+    // } else {
+    //     $user_name = test_input($_POST['uname']);
+    // }
 
-    if(empty($_POST['category'])){
-        $quiz_cate = "";
-    } else {
-        $quiz_cate = test_input($_POST['category']);
-    }
+    // if(empty($_POST['category'])){
+    //     $quiz_cate = "";
+    // } else {
+    //     $quiz_cate = test_input($_POST['category']);
+    // }
 
-    if($unameErr != null){
-      echo "<h5 style='color : #FFCC29 ; margin-top : 0'>";
-      print_r("$unameErr");
-      echo "</h5>";
-    } else{
-        header('Location: '. $quiz_cate .'.php');
-        exit();
-    } 
+    // if($unameErr != null){
+    //   echo "<h5 style='color : #FFCC29 ; margin-top : 0'>";
+    //   print_r("$unameErr");
+    //   echo "</h5>";
+    // } else{
+    //     header('Location: '. $quiz_cate .'.php');
+    //     exit();
+    // } 
     
     ?>
 
